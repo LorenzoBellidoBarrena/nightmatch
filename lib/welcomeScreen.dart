@@ -82,25 +82,54 @@ class WelcomeScreen extends StatelessWidget {
 
                 const SizedBox(height: DT.s6),
 
-                // BOTÓN CREATE ACCOUNT
+                // Botón "Create Account"
                 SizedBox(
                   width: double.infinity,
                   height: 52,
                   child: ElevatedButton(
                     onPressed: () {},
-                    child: const Text("Create Account"),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: DT.accentNeon,
+                      foregroundColor: Colors.black,
+                      shadowColor: DT.accentGlow,
+                      elevation: 10,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    ),
+                    child: const Text(
+                      "Create Account",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
                   ),
                 ),
 
-                const SizedBox(height: DT.s4),
+                const SizedBox(height: 16),
 
-                // BOTÓN LOGIN
+                // Botón "Log in"
                 SizedBox(
                   width: double.infinity,
                   height: 52,
                   child: OutlinedButton(
                     onPressed: () {},
-                    child: const Text("Log In"),
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(color: Colors.white70, width: 1.4),
+                      foregroundColor: Colors.white70,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      elevation: 0,
+                    ),
+                    child: const Text(
+                      "Log In",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
                   ),
                 ),
 

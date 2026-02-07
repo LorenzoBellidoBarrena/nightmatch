@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class DT {
-  // Spacing scale
+  // ==========================
+  // SPACING SCALE
+  // ==========================
   static const s1 = 4.0,
       s2 = 8.0,
       s3 = 12.0,
@@ -11,50 +13,60 @@ class DT {
       s7 = 28.0,
       s8 = 32.0;
 
-  // Radius (según tu guía)
-  static const rChip = 8.0; // radius-chip
-  static const rButton = 50.0; // radius-button
-  static const rCard = 16.0; // radius-card
+  // ==========================
+  // RADII
+  // ==========================
+  static const rChip = 8.0;
+  static const rButton = 50.0;
+  static const rCard = 16.0;
   static const rCardSmall = 12.0;
   static const rCardLarge = 24.0;
 
-  // Background colors (NUEVA PALETA)
-  static const bgMain = Color(0xFF000000); // color-bg-main
-  static const bgSecondary = Color(0xFF0A0A0A); // color-bg-secondary
-  static const bgTertiary = Color(0xFF1A1A1A); // color-bg-tertiary
+  // ==========================
+  // BACKGROUND COLORS
+  // ==========================
+  static const bgMain = Color(0xFF000000); // Fondo principal
+  static const bgSecondary = Color(0xFF0A0A0A); // Tarjetas, modales
+  static const bgTertiary = Color(0xFF1A1A1A); // Inputs, search bar
 
-  // Accent colors
-  static const accentNeon = Color(0xFF00FFFF); // Aqua Neon
-  static const accentGlow = Color.fromRGBO(0, 255, 255, 0.4); // Neon glow aura
+  // ==========================
+  // ACCENT COLORS (NEON)
+  // ==========================
+  static const accentNeon = Color(0xFF00FFFF); // Aqua neon
+  static const accentGlow = Color.fromRGBO(0, 255, 255, 0.4); // Glow suave
 
-  // Text colors
-  static const textPrimary = Color(0xFFFFFFFF); // color-text-primary
-  static const textSecondary = Color(0xFFA0A0A0); // color-text-secondary
+  // ==========================
+  // TEXT COLORS
+  // ==========================
+  static const textPrimary = Color(0xFFFFFFFF);
+  static const textSecondary = Color(0xFFA0A0A0);
 
-  // Status colors
-  static const statusHot = Color(0xFFFF3B3B); // color-status-hot
+  // ==========================
+  // STATUS COLORS
+  // ==========================
+  static const statusHot = Color(0xFFFF3B3B);
 
-  // Shadows (neón)
+  // ==========================
+  // SHADOWS
+  // ==========================
   static const shadowNeonButton = BoxShadow(
     color: Color.fromRGBO(0, 255, 255, 0.6),
     blurRadius: 15,
-    spreadRadius: 0,
+    spreadRadius: 2,
   );
 
   static const shadowNeonText = [
     Shadow(color: Color.fromRGBO(0, 255, 255, 0.8), blurRadius: 8),
   ];
 
-  // Borders
-  static const borderNeonThin = BorderSide(color: Color(0xFF00FFFF), width: 1);
+  // ==========================
+  // BORDERS
+  // ==========================
+  static const borderNeonThin = BorderSide(color: accentNeon, width: 1);
 
-  // Blur effect (para usar en Containers)
-  static BoxDecoration blurBackground = BoxDecoration(
-    color: Colors.black.withOpacity(0.6),
-    backgroundBlendMode: BlendMode.darken,
-  );
-
-  // Typography Styles (SEGÚN TU TABLA)
+  // ==========================
+  // TYPOGRAPHY
+  // ==========================
   static const textDisplayNeon = TextStyle(
     fontSize: 32,
     fontWeight: FontWeight.w800,
