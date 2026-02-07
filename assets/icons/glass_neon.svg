@@ -1,0 +1,26 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Círculo exterior neon -->
+  <circle cx="60" cy="60" r="48" stroke="#00FFFF" stroke-width="3" stroke-linecap="round" filter="url(#glow)"></circle>
+
+  <!-- Copa futurista -->
+  <path d="M45 25H75L70 55C69 60 65 63 60 63C55 63 51 60 50 55L45 25Z" stroke="#00FFFF" stroke-width="3" stroke-linejoin="round" fill="none"></path>
+
+  <!-- Base de la copa -->
+  <path d="M60 63V85" stroke="#00FFFF" stroke-width="3" stroke-linecap="round"></path>
+
+  <!-- Base inferior -->
+  <path d="M48 90H72" stroke="#00FFFF" stroke-width="3" stroke-linecap="round"></path>
+
+  <!-- FILTRO DE GLOW -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="coloredBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+</svg>
