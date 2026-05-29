@@ -10,9 +10,7 @@ NightMatch es un prototipo Flutter de pantalla inicial para una app social orien
 
 ## 📸 Capturas
 
-> Pendiente de añadir capturas de pantalla de la aplicación.
-
-El proyecto incluye assets visuales en `assets/images/` y `assets/icons/`, pero no capturas finales de la app.
+![Pantalla de bienvenida de NightMatch](screenshots/flutter-web-welcome.png)
 
 ## 🧩 Funcionalidades
 
